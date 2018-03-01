@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void mandarCorreo(View correo)
     {
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Asunto: Prueba");
-        intent.putExtra(Intent.EXTRA_TEXT, "Contenido del correo: Prueba");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "eoropezag@ipn.mx"} );
-        startActivity(intent);
+        Intent intents = new Intent(Intent.ACTION_SEND);
+        intents.setType("text/plain");
+        intents.putExtra(Intent.EXTRA_SUBJECT, "Asunto: Prueba");
+        intents.putExtra(Intent.EXTRA_TEXT, "Contenido del correo: Prueba");
+        intents.putExtra(Intent.EXTRA_EMAIL, new String[] { "eoropezag@ipn.mx"} );
+        startActivity(intents);
     }
 
 
